@@ -15,8 +15,9 @@
              </div>
              <div class="col-md-4">
                  <h1>{{item.item_name}}</h1>
-                 <h2>{{item.item_desc}}</h2>
-                 <h3>$ {{item.item_price}}</h3>
+                 <h3>{{item.item_desc}}</h3>
+                 <h5>$ {{item.item_price}}</h5>
+                 <h6>added by: {{item.username}}</h6>
              </div>
              <div class="col-md-2">
                  <a href="{% url 'food:detail' item.id %}" class="btn btn-success">Details</a>
